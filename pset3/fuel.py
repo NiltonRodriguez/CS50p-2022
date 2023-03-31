@@ -8,11 +8,11 @@ def fuel_lvl():
         values = check_values()
         try:
             fuel = (values[0] / values[1]) * 100
-            if fuel < 1:
+            if fuel <= 1:
                 level = "E"
             elif 1 < fuel < 99:
                 level = f"{round(fuel)}%"
-            elif 99 < fuel <= 100:
+            elif 99 <= fuel <= 100:
                 level = "F"
             else:
                 continue
