@@ -19,9 +19,9 @@ def taco_check():
         try:
             item = input("Item: ").title()
             if item in menu:
-                total += menu[item]
-                print(f"${total:.2f}")
+                total += menu[item]             
         except EOFError:
+            print(f"${total:.2f}")
             break
 
 if __name__ == "__main__":
